@@ -40,7 +40,7 @@ number and balance details.
 I have created 3 programs Client.cpp, server.cpp and frontendclient.cpp. All the files should be run in
 separate terminals. Each file should be run as follows:
 
-## client.cpp:
+## Client.cpp:
 The client.cpp file contains the front-end implementation. It should be run at the end.
 Compile: g++ Client.cpp -o client -pthread
 Run the executable: ./client <portnumber> (same port number as the port number you are
