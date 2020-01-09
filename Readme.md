@@ -1,10 +1,11 @@
-Distributed Banking Service with simple fault tolerance:
+# Distributed Banking Service with simple fault tolerance:
 
 I have implemented a simple, distributed banking system that
 permits multiple concurrent operations and exhibits fault tolerance. In order to implement this,
 I have created 3 programs as follows:
 
-Client: This program gets the transaction details from the user and sends it to the frontend
+### Client: 
+This program gets the transaction details from the user and sends it to the frontend
 server. Once the transaction gets processed by the frontend and backend servers, the results
 are sent to the client which is displayed to the client.
 Frontend server: This program accepts the connections from the client and passes the
@@ -14,7 +15,8 @@ servers process the requests and send the output to this program. As a result, f
 the responses to client. In case of Abort, the backend servers send ABORT which is passed to the
 client.
 
-Backend server: As mentioned in the project description, I have created 3 backend servers
+### Backend server:
+As mentioned in the project description, I have created 3 backend servers
 which gets all the transaction details from the frontend server and performs the required
 actions. The backend servers maintain atomicity and perform an operation only if all the
 backend servers accept otherwise does not perform it and sends Abort.
@@ -38,7 +40,7 @@ number and balance details.
 I have created 3 programs Client.cpp, server.cpp and frontendclient.cpp. All the files should be run in
 separate terminals. Each file should be run as follows:
 
-client.cpp:
+## client.cpp:
 The client.cpp file contains the front-end implementation. It should be run at the end.
 Compile: g++ Client.cpp -o client -pthread
 Run the executable: ./client <portnumber> (same port number as the port number you are
@@ -53,7 +55,7 @@ Run the executable: ./front <port_number> ./front 7000
 After running this executable, the program will pass the instructions from the client to the backend
 servers and the results from the servers to the client.
 
-Server.cpp
+## Server.cpp
 The server.cpp file contains the backend server implementation. The server file must be run in 3
 separate terminals to emulate 3 separate servers. Each file must be run as follows:
 Compile: g++ server.cpp -o server –pthread
