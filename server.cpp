@@ -1,7 +1,4 @@
-/*Raghav Deivachilai
-ZG70451*/
 /*This is a backend server which will accept the connections from front end server and process transactions*/
-
 #include <iostream>
 #include <fcntl.h>
 #include <thread>
@@ -215,9 +212,3 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
-
-/*References:
-https://linux.die.net/man/2/setsockopt
-https://github.com/intekmaster/Fault-Tolerant-Banking-Service
-https://github.com/RashmiPrava21/OperatingSystems-Concurrent-Banking-Transactions
-*/
