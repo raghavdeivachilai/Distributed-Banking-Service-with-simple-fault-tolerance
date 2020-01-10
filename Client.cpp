@@ -1,5 +1,3 @@
-/*Raghav Deivachilai 
-ZG70451 */
 /*Client which will connect to front-end server */
 #include <iostream>
 #include <fcntl.h>
@@ -77,9 +75,3 @@ int main(int argc, char *argv[])
     close(sockfd);
     return 0;
 }
-
-/*References:
-https://linux.die.net/man/2/setsockopt
-https://github.com/intekmaster/Fault-Tolerant-Banking-Service
-https://github.com/RashmiPrava21/OperatingSystems-Concurrent-Banking-Transactions
-*/
