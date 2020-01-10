@@ -1,7 +1,4 @@
-/*Raghav Deivachilai
-ZG70451*/
 /*This is front end Server which will accept the connection from client and commit or abort the transaction*/
-
 #include <iostream>
 #include <fcntl.h>
 #include <thread>
@@ -248,9 +245,3 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-
-/*References:
-1.https://linux.die.net/man/2/setsockopt
-2. https://github.com/intekmaster/Fault-Tolerant-Banking-Service
-3.https://github.com/RashmiPrava21/OperatingSystems-Concurrent-Banking-Transactions
-*/
